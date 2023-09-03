@@ -34,7 +34,7 @@ export default function UserList() {
   return (
     <ResultPage
       title="User Lists"
-      description="Gets all the listopias that the user liked and voted for."
+      description="Busca todas as Listopias que o usuário especificado não só curtiu, como votou."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -48,7 +48,7 @@ export default function UserList() {
                 name="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Type a username"
+                placeholder="Indique um username"
                 required
               />
             </div>

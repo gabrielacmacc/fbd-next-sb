@@ -40,7 +40,7 @@ export default function AuthorBook() {
   return (
     <ResultPage
       title="Author Books"
-      description="Gets the number of books of a specific genre written by each author in which the user participated."
+      description="Busca o número de livros escritos por cada autor no gênero especificado."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -54,7 +54,7 @@ export default function AuthorBook() {
                 name="genre"
                 value={genre}
                 onChange={(e) => setGenre(e.target.value)}
-                placeholder="Type a genre"
+                placeholder="Indique um gênero"
                 required
               />
             </div>

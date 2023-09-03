@@ -39,7 +39,7 @@ export default function GroupTopics() {
   return (
     <ResultPage
       title="Group Topics"
-      description="Gets all topics and comments for each group."
+      description="Busca todos os tópicos e comentários para cada grupo."
     >
       <div className="flex flex-col gap-4">
         {/* @ts-ignore */}

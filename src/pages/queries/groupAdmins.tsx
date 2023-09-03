@@ -35,7 +35,7 @@ export default function GroupAdmins() {
   return (
     <ResultPage
       title="Group Admins"
-      description="Gets all the usernames and groups of users with admin roles."
+      description="Busca todos os usuários que possuem cargos administrativos em grupos e o nome desses grupos."
     >
       <div className="flex flex-col gap-4">
         {/* @ts-ignore */}

@@ -34,7 +34,7 @@ export default function GroupRoles() {
   return (
     <ResultPage
       title="Group Roles"
-      description="Gets all the groups that have less members than the specified amount."
+      description="Busca todos os grupos que possuem menos membros do que a quantidade especificada."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -49,7 +49,7 @@ export default function GroupRoles() {
                 value={amount}
                 onChange={(e) => setAmount(+e.target.value)}
                 min={1}
-                placeholder="Type an amount"
+                placeholder="Indique uma quantidade"
                 required
               />
             </div>

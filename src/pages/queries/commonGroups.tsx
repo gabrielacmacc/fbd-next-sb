@@ -32,7 +32,7 @@ export default function CommonGroups() {
   return (
     <ResultPage
       title="Common Groups"
-      description="Gets all the usernames that are in all the groups that the user is and have posted something."
+      description="Busca os usuários que participam de todos os grupos que o usuário especificado participa e que postaram algo ."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -48,7 +48,7 @@ export default function CommonGroups() {
                 onChange={(e) => setUid(+e.target.value)}
                 min={1}
                 max={20}
-                placeholder="Type an user ID"
+                placeholder="Indique um user ID"
                 required
               />
             </div>

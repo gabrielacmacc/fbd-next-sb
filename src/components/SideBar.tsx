@@ -17,7 +17,7 @@ const NavItem: React.FC<Routes> = ({ name, path, withParams }) => {
       >
         <span className="ml-3 text-sm">{name}</span>
         {withParams && (
-          <span className="inline-flex px-2 ml-3 text-sm font-medium text-gray-800 bg-green-800 rounded-full dark:text-gray-300">
+          <span className="inline-flex px-2.5 ml-3 text-sm font-medium text-gray-800 bg-orange-700 rounded-full dark:text-gray-300">
             Param
           </span>
         )}
@@ -30,15 +30,11 @@ const SideBar: React.FC = () => {
   return (
     <aside
       id="logo-sidebar"
-      className="w-[20rem] h-screen"
+      className="w-[20rem]"
       aria-label="Sidebar"
+      style={{minHeight: '44.2rem'}}
     >
       <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-        <Link href="/" className="flex items-center pl-2.5 mb-5">
-          <span className="self-center text-xl font-semibold whitespace-nowrap">
-            FBD DB
-          </span>
-        </Link>
         <ul className="space-y-2 font-medium">
           {ROUTES.map((route) => (
             <NavItem

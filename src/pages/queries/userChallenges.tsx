@@ -36,7 +36,7 @@ export default function UserChallenge() {
   return (
     <ResultPage
       title="User Challenges"
-      description="Gets all the challenges in which the user participated."
+      description="Busca todos os desafios nos quais o usuário especificado participou."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -50,7 +50,7 @@ export default function UserChallenge() {
                 name="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Type a username"
+                placeholder="Indique um username"
                 required
               />
             </div>

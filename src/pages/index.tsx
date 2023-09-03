@@ -10,8 +10,7 @@ const Home: React.FC = () => {
       </Head>
       <main className="justify-center items-center gap-4">
         <h1 className="text-default">Trabalho Final FBD</h1>
-
-        <h2>Please select your query on the side menu</h2>
+        <h2>Selecione uma das consultas no menu lateral</h2>
       </main>
     </>
     )

@@ -82,7 +82,7 @@ export default function InsertReviews() {
   return (
     <ResultPage
       title="Insert Review"
-      description="Inserts a book review to validate the trigger."
+      description="Insere a avaliação de um livro para validar o gatilho criado."
     >
       <div className="flex flex-col gap-4">
         <form className="flex flex-col justify-between gap-4" onSubmit={setData}>
@@ -98,7 +98,7 @@ export default function InsertReviews() {
                 onChange={(e) => setUid(+e.currentTarget.value)}
                 min={1}
                 max={20}
-                placeholder="Type a user ID"
+                placeholder="Indique um user ID"
                 required
               />
             </div>
@@ -113,7 +113,7 @@ export default function InsertReviews() {
                 name="bid"
                 value={bid}
                 onChange={(e) => setBid(e.currentTarget.value)}
-                placeholder="Type a book ID"
+                placeholder="Indique um book ID"
                 required
               />
             </div>
@@ -130,7 +130,7 @@ export default function InsertReviews() {
                 onChange={(e) => setRating(+e.currentTarget.value)}
                 min={1}
                 max={5}
-                placeholder="Rate the book"
+                placeholder="Indique uma nota"
                 required
               />
             </div>
@@ -145,20 +145,24 @@ export default function InsertReviews() {
                 name="comment"
                 value={comment}
                 onChange={(e) => setComment(e.currentTarget.value)}
-                placeholder="Write a comment"
+                placeholder="Escreva um commentário"
               />
             </div>
           </div>
           <input
-            className="button-fill bg-green-700 cursor-pointer"
+            className="button-fill bg-orange-700 cursor-pointer"
             type="submit"
             value="Review"
           />
         </form>
-        {/* @ts-ignore */}
-        {<ResultTable data={reviews} headers={TableHeaderReviews} />}
-        {/* @ts-ignore */}
-        {<ResultTable data={newRating} headers={TableHeaderBooks} />}
+        <div className="flex flex-col gap-4 pt-5">
+          <label>Tabela de avaliações</label>
+          {/* @ts-ignore */}
+          {<ResultTable data={reviews} headers={TableHeaderReviews} />}
+          <label>Tabela de informações do livro</label>
+          {/* @ts-ignore */}
+          {<ResultTable data={newRating} headers={TableHeaderBooks} />}
+        </div>
       </div>
     </ResultPage>
   )

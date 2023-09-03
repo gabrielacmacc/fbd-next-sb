@@ -32,7 +32,7 @@ export default function UserFollower() {
   return (
     <ResultPage
       title="User Followers"
-      description="Gets all users that the user follows."
+      description="Busca todos usuários que o usuário especificado segue."
     >
       <div className="flex flex-col gap-4">
         <form>
@@ -48,7 +48,7 @@ export default function UserFollower() {
                 onChange={(e) => setUid(+e.target.value)}
                 min={1}
                 max={20}
-                placeholder="Type a user ID"
+                placeholder="Indique um user ID"
                 required
               />
             </div>
